@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditFragment"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На главное меню"
+        android:textSize="14sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/darkgreen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кредитный калькулятор"
+        android:textSize="26sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сколько вам нужно"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/amountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="30000 руб."
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="70000"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/srokET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="введите срок кредита"
+            android:inputType="number"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="РАССЧИТАТЬ"
+            android:backgroundTint="@color/darkgreen"
+            android:textSize="26sp"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/rezText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="ежемесячный платеж"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+</LinearLayout>
